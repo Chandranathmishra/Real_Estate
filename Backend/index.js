@@ -31,9 +31,9 @@ app.use(cookieParser());
 
 app.listen(4000);
 
-app.use("/Backend/user", userRouter);
-app.use("/Backend/auth", authRouter);
-app.use("/Backend/listing", listingRouter);
+app.use("/api/user", userRouter);
+app.use("/api/auth", authRouter);
+app.use("/api/listing", listingRouter);
 
 app.use(express.static(path.join(__dirname, "/Frontend/dist")));
 
